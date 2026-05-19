@@ -19,7 +19,14 @@ int main() {
         "..-","...-",".--","-..-","-.--","--..",
         "-----",".----","..---","...--","....-",".....","-....","--...","---..","----.","/"
     };
+ string text;
+    cout << "Enter text to convert to Morse code: ";
+    cin >> text;
 
+    cout << "Morse Code: ";
+     //go through each character in the input
+    for (int i = 0; i < text.length(); i++) {
+        char c = toupper(text[i]); // normalize to uppercase
    
 
         // search for the character in the letters array
